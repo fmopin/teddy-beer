@@ -20,14 +20,7 @@ module.exports.getBars = function(res, match) {
 
       title: 'div > .match_bar_top > div.match_bar_name > a@title',
       image_url: 'div > div.match_bar_detail > div.match_bar_picture > a > img@src',
-      subtitles: 'div > div.match_bar_info > div > p > .street-address',
-      buttons:[
-          {
-            type:"web_url",
-            url:"https://google.com",
-            title:"Google"
-          }
-      ]
+      subtitle: 'div > div.match_bar_info > div > p > .street-address',
 
   }])(function(err, bars) {
       if (err) {
