@@ -1,0 +1,52 @@
+{
+	"messages": [{
+		"attachment": {
+			"type": "template",
+			"payload": {
+				"template_type": "list",
+				"top_element_style": "large",
+				"elements": [{
+					"title": "Harp Bar",
+					"image_url": "http://www.allomatch.com/uploads/gallery/thumbnails/photo-harp-bar-094eff24b178a55358caf41b291f7dcd.jpg",
+					"subtitle": "118 Boulevard de Clichy"
+				}, {
+					"title": "L'Agité de La Gaité",
+					"image_url": "http://www.allomatch.com/uploads/gallery/thumbnails/photo-bistrot-de-l-echanson-montparnasse-d575a5887b604ebe1a3f9dd42be42593.jpg",
+					"subtitle": "20 rue de la Gaité"
+				}, {
+					"title": "Heuresup",
+					"image_url": "http://www.allomatch.com/uploads/gallery/thumbnails/photo-heuresup-4bb500ab59df8441025666bf561f7fa4.jpg",
+					"subtitle": "299 Rue Lecourbe,"
+				}, {
+					"title": "L'Absolu",
+					"image_url": "http://www.allomatch.com/uploads/gallery/thumbnails/photo-l-absolu-cc27d67e5363d6594e03a7551479205c.jpg",
+					"subtitle": "140 avenue de Villiers"
+				}, {
+					"title": "Madeleine",
+					"image_url": "http://www.allomatch.com/uploads/gallery/thumbnails/photo-madeleine-bastille-e434252f98b2261d50a3ac738b55becb.jpg",
+					"subtitle": "39 boulevard Bonne Nouvelle"
+				}, {
+					"title": "La Fac",
+					"image_url": "http://www.allomatch.com/uploads/gallery/thumbnails/photo-la-fac-524d75069c8cb0fbd45a965b5d55abaf.jpg",
+					"subtitle": "44 Rue Des Fossés Saint-Bernard"
+				}, {
+					"title": "Cafe Oz Denfert",
+					"image_url": "http://www.allomatch.com/uploads/gallery/thumbnails/photo-cafe-oz-denfert-fbd44ad294930c3129007aa4024bb1ec.jpg",
+					"subtitle": "3 place Denfert-Rochereau"
+				}, {
+					"title": "Le grand cerf",
+					"image_url": "http://www.allomatch.com/uploads/gallery/thumbnails/photo-le-grand-cerf-1-fa14416ea0ffa64764f4eb5032081f65.jpg",
+					"subtitle": "79, boulevard de sébastopol"
+				}, {
+					"title": "Le Camion qui fume",
+					"image_url": "http://www.allomatch.com/uploads/gallery/thumbnails/photo-le-camion-qui-fume-76cd5431ee91e792a9eb256dfc176f06.jpg",
+					"subtitle": "168 rue montmartre"
+				}, {
+					"title": "Thirsty Mad Cat",
+					"image_url": "http://www.allomatch.com/uploads/gallery/thumbnails/photo-thirsty-mad-cat-3f042a440af9d591bdeaec4d634383b6.jpg",
+					"subtitle": "120, rue Montmartre"
+				}]
+			}
+		}
+	}]
+}
