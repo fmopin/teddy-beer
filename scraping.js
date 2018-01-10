@@ -65,15 +65,15 @@ module.exports.getBars = function(res, match) {
 
           bars.forEach(function(object, index) {
 
-            if (index == bars.length - 1) {
-              str += '{"title":"' + object.titleScraped + '", "image_url":"TEST", "subtitle":"' + object.subtitleScraped + '"}';
+            if (index <= 4) {
+              if (index == bars.length - 1) {
+                str += '{"title":"' + object.titleScraped + '", "image_url":"' + object.imageScraped + '", "subtitle":"' + object.subtitleScraped + '"}';
+              }
+              else {
+                str += '{"title":"' + object.titleScraped + '", "image_url":"' + object.imageScraped + '", "subtitle":"' + object.subtitleScraped + '"},';
+              }
             }
-            else {
-              str += '{"title":"' + object.titleScraped + '", "image_url":"TEST", "subtitle":"' + object.subtitleScraped + '"},';
-            }
-
           })
-
           str += ']}}}]}'
 
           // console.log("Obj to str : ");
