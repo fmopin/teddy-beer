@@ -42,7 +42,7 @@ module.exports.getBars = function(res, match) {
 
           str += ']}}}]}'
 
-          var str = str.replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, '');
+          var str = str.replace(/&\/\\#,+()$~%'":*?<>/g, '');
 
           // var str = '{"messages":[{"attachment":{"type":"template","payload":{"template_type":"list","top_element_style":"large","elements":[{"title":"Ceci est un titre avec l\'apostrophe","image_url":"http://rockets.chatfuel.com/img/shirt.png","subtitle":"ceci est un subtitle"},{"title":"Ceci est un titre","image_url":"http://rockets.chatfuel.com/img/shirt.png","subtitle":"ceci est un subtitle"}]}}}]}'
 
