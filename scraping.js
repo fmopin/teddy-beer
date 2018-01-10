@@ -63,17 +63,18 @@ module.exports.getBars = function(res, match) {
 
           var str = '{"messages":[{"attachment":{"type":"template","payload":{"template_type":"list","top_element_style":"large","elements":['
 
+          var bars = bars.slice(1,2,3,4);
           bars.forEach(function(object, index) {
 
-            if (index <= 4) {
-              if (index == bars.length - 1) {
-                str += '{"title":"' + object.titleScraped + '", "image_url":"' + object.imageScraped + '", "subtitle":"' + object.subtitleScraped + '"}';
-              }
-              else {
-                str += '{"title":"' + object.titleScraped + '", "image_url":"' + object.imageScraped + '", "subtitle":"' + object.subtitleScraped + '"},';
-              }
+            if (index == bars.length - 1) {
+              str += '{"title":"' + object.titleScraped + '", "image_url":"' + object.imageScraped + '", "subtitle":"' + object.subtitleScraped + '"}';
             }
+            else {
+              str += '{"title":"' + object.titleScraped + '", "image_url":"' + object.imageScraped + '", "subtitle":"' + object.subtitleScraped + '"},';
+            }
+
           })
+
           str += ']}}}]}'
 
           // console.log("Obj to str : ");
