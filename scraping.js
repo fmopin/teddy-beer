@@ -44,8 +44,6 @@ module.exports.getBars = function(res, match) {
 
           // var str = '{"messages":[{"attachment":{"type":"template","payload":{"template_type":"list","top_element_style":"compact","elements":[{"title":"Ceci est un titre", "subtitle":"ceci est un subtitle"}]}}}]}'
 
-          // console.log(str);
-
           // console.log("Obj to str : ");
           var object = JSON.parse(str);
           // console.log(object);
