@@ -66,10 +66,10 @@ module.exports.getBars = function(res, match) {
           bars.forEach(function(object, index) {
 
             if (index == bars.length - 1) {
-              str += '{"title":"TEST", "image_url":"' + object.imageScraped + '", "subtitle":"' + object.subtitleScraped + '"}';
+              str += '{"title":"' + object.titleScraped + '", "image_url":"TEST", "subtitle":"' + object.subtitleScraped + '"}';
             }
             else {
-              str += '{"title":"TEST", "image_url":"' + object.imageScraped + '", "subtitle":"' + object.subtitleScraped + '"},';
+              str += '{"title":"' + object.titleScraped + '", "image_url":"TEST", "subtitle":"' + object.subtitleScraped + '"},';
             }
 
           })
