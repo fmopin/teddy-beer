@@ -45,7 +45,7 @@ module.exports.getBars = function(res, match) {
 
           var str = '{"messages":[{"attachment":{"type":"template","payload":{"template_type":"list","top_element_style":"large","elements":[{"title":"Ceci est un titre avec l'apostrophe","image_url":"http://rockets.chatfuel.com/img/shirt.png","subtitle":"ceci est un subtitle"},{"title":"Ceci est un titre","image_url":"http://rockets.chatfuel.com/img/shirt.png","subtitle":"ceci est un subtitle"}]}}}]}'
 
-          var str = str.replace(/'/g, "''")
+          var str = str.replace(/'/g, " ");
 
           // var str = '{"messages":[{"attachment":{"type":"template","payload":{"template_type":"list","top_element_style":"large","elements":[{"title":"Chatfuel Rockets T-Shirt","image_url":"http://rockets.chatfuel.com/img/shirt.png","subtitle":"Soft white cotton t-shirt with CF Rockets logo","buttons":[{"type":"web_url","url":"https://rockets.chatfuel.com/store/shirt","title":"View Item"}]},{"title":"Chatfuel Rockets Hoodie","image_url":"http://rockets.chatfuel.com/img/hoodie.png","subtitle":"Soft gray cotton t-shirt with CF Rockets logo","buttons":[{"type":"web_url","url":"https://rockets.chatfuel.com/store/hoodie","title":"View Item"}]}]}}}]}'
           // console.log(str);
