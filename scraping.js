@@ -42,9 +42,7 @@ module.exports.getBars = function(res, match) {
           //
           // str += ']}}}]}'
 
-          // var str = '{"messages":[{"attachment":{"type":"template","payload":{"template_type":"list","top_element_style":"compact","elements":[{"title":"Ceci est un titre", "image_url":"https://www.google.fr/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjU14OLxs3YAhXKthQKHbAhDMgQjRwIBw&url=https%3A%2F%2Fwww.w3schools.com%2Fw3css%2Fw3css_images.asp&psig=AOvVaw3vAAU3G6yZFW4NSPbvBaSl&ust=1515678911588184", "subtitle":"ceci est un subtitle", "buttons": [{ "type":"web_url", "url":"http://google.com", "title":"Ignorer le boutton"}]}]}}}]}'
-
-          var str = '{ "messages": [ {"text": "Welcome to the Chatfuel Rockets!"}, {"text": "What are you up to?"} ] }';
+          var str = '{"messages":[{"attachment":{"type":"template","payload":{"template_type":"list","top_element_style":"compact","elements":[{"title":"Ceci est un titre", "subtitle":"ceci est un subtitle", "buttons": [{ "type":"web_url", "url":"http://google.com", "title":"Ignorer le boutton"}]}]}}}]}'
 
           // console.log(str);
 
