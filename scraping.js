@@ -32,10 +32,10 @@ module.exports.getBars = function(res, match) {
           bars.forEach(function(object, index) {
 
             if (index == bars.length - 1) {
-              str += '{"title":"' + object.titleScraped + '", "image_url":"' + object.imageScraped + '", "subtitle":"' + object.subtitleScraped + '"}';
+              str += '{"title":"' + object.titleScraped + '", "image_url":"' + object.imageScraped + '", "subtitle":"' + object.subtitleScraped + '", "buttons": [{ "type":"web_url", "url":"http://google.com", "title":"Ignorer le boutton"}]}';
             }
             else {
-              str += '{"title":"' + object.titleScraped + '", "image_url":"' + object.imageScraped + '", "subtitle":"' + object.subtitleScraped + '"},';
+              str += '{"title":"' + object.titleScraped + '", "image_url":"' + object.imageScraped + '", "subtitle":"' + object.subtitleScraped + '", "buttons": [{ "type":"web_url", "url":"http://google.com", "title":"Ignorer le boutton"}]},';
             }
 
           })
