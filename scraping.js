@@ -27,22 +27,22 @@ module.exports.getBars = function(res, match) {
           defer.reject(err);
       } else {
 
-          // var str = '{"messages":[{"attachment":{"type":"template","payload":{"template_type":"list","top_element_style":"compact","elements":['
-          //
-          // bars.forEach(function(object, index) {
-          //
-          //   if (index == bars.length - 1) {
-          //     str += '{"title":"' + object.titleScraped + '", "image_url":"' + object.imageScraped + '", "subtitle":"' + object.subtitleScraped + '", "buttons": [{ "type":"web_url", "url":"http://google.com", "title":"Ignorer le boutton"}]}';
-          //   }
-          //   else {
-          //     str += '{"title":"' + object.titleScraped + '", "image_url":"' + object.imageScraped + '", "subtitle":"' + object.subtitleScraped + '", "buttons": [{ "type":"web_url", "url":"http://google.com", "title":"Ignorer le boutton"}]},';
-          //   }
-          //
-          // })
-          //
-          // str += ']}}}]}'
+          var str = '{"messages":[{"attachment":{"type":"template","payload":{"template_type":"list","top_element_style":"compact","elements":['
 
-          var str = '{"messages":[{"attachment":{"type":"template","payload":{"template_type":"list","top_element_style":"compact","elements":[{"title":"Ceci est un titre", "subtitle":"ceci est un subtitle"}]}}}]}'
+          bars.forEach(function(object, index) {
+
+            if (index == bars.length - 1) {
+              str += '{"title":"' + object.titleScraped.replace(/'/g, " ") + '", "image_url":"' + object.imageScraped + '", "subtitle":"' + object.subtitleScraped.replace(/'/g, " ") + '", "buttons": [{ "type":"web_url", "url":"http://google.com", "title":"Ignorer le boutton"}]}';
+            }
+            else {
+              str += '{"title":"' + object.titleScraped + '", "image_url":"' + object.imageScraped + '", "subtitle":"' + object.subtitleScraped + '", "buttons": [{ "type":"web_url", "url":"http://google.com", "title":"Ignorer le boutton"}]},';
+            }
+
+          })
+
+          str += ']}}}]}'
+
+          // var str = '{"messages":[{"attachment":{"type":"template","payload":{"template_type":"list","top_element_style":"compact","elements":[{"title":"Ceci est un titre", "subtitle":"ceci est un subtitle"}]}}}]}'
 
           // console.log(str);
 
