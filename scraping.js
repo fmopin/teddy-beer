@@ -42,7 +42,7 @@ module.exports.getBars = function(res, match) {
           //
           // str += ']}}}]}'
 
-          var str = '{"messages":[{"attachment":{"type":"template","payload":{"template_type":"list","top_element_style":"compact","elements":[{"title":"Ceci est un titre", "image_url":"test.jpg", "subtitle":"ceci est un subtitle", "buttons": [{ "type":"web_url", "url":"http://google.com", "title":"Ignorer le boutton"}]}]}}}]}'
+          var str = '{"messages":[{"attachment":{"type":"template","payload":{"template_type":"list","top_element_style":"compact","elements":[{"title":"Ceci est un titre", "subtitle":"ceci est un subtitle"}]}}}]}'
 
           // console.log(str);
 
