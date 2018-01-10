@@ -6,45 +6,45 @@
 				"template_type": "list",
 				"top_element_style": "large",
 				"elements": [{
-					"title": "Harp Bar",
-					"image_url": "http://www.allomatch.com/uploads/gallery/thumbnails/photo-harp-bar-094eff24b178a55358caf41b291f7dcd.jpg",
-					"subtitle": "118 Boulevard de Clichy"
-				}, {
-					"title": "L'Agité de La Gaité",
-					"image_url": "http://www.allomatch.com/uploads/gallery/thumbnails/photo-bistrot-de-l-echanson-montparnasse-d575a5887b604ebe1a3f9dd42be42593.jpg",
-					"subtitle": "20 rue de la Gaité"
-				}, {
 					"title": "Heuresup",
 					"image_url": "http://www.allomatch.com/uploads/gallery/thumbnails/photo-heuresup-4bb500ab59df8441025666bf561f7fa4.jpg",
 					"subtitle": "299 Rue Lecourbe,"
 				}, {
+					"title": "Le Bal Rock Anciennement Le Players",
+					"image_url": "http://www.allomatch.com/uploads/gallery/thumbnails/photo-le-bal-rock-anciennement-le-palyers-1a14e101f601f19dd939cbf24367f68f.jpg",
+					"subtitle": "161 rue Montmartre,"
+				}, {
 					"title": "L'Absolu",
 					"image_url": "http://www.allomatch.com/uploads/gallery/thumbnails/photo-l-absolu-cc27d67e5363d6594e03a7551479205c.jpg",
-					"subtitle": "140 avenue de Villiers"
+					"subtitle": "140 avenue de Villiers,"
 				}, {
-					"title": "Madeleine",
-					"image_url": "http://www.allomatch.com/uploads/gallery/thumbnails/photo-madeleine-bastille-e434252f98b2261d50a3ac738b55becb.jpg",
-					"subtitle": "39 boulevard Bonne Nouvelle"
+					"title": "Au Diable des Lombards",
+					"image_url": "http://www.allomatch.com/uploads/gallery/thumbnails/photo-au-diable-des-lombards-22b28b4da2aec3e4330a94ed72819d76.jpg",
+					"subtitle": "64, rue des Lombards,"
 				}, {
-					"title": "La Fac",
-					"image_url": "http://www.allomatch.com/uploads/gallery/thumbnails/photo-la-fac-524d75069c8cb0fbd45a965b5d55abaf.jpg",
-					"subtitle": "44 Rue Des Fossés Saint-Bernard"
+					"title": "L'Agité de La Gaité",
+					"image_url": "http://www.allomatch.com/uploads/gallery/thumbnails/photo-bistrot-de-l-echanson-montparnasse-d575a5887b604ebe1a3f9dd42be42593.jpg",
+					"subtitle": "20 rue de la Gaité,"
 				}, {
-					"title": "Cafe Oz Denfert",
-					"image_url": "http://www.allomatch.com/uploads/gallery/thumbnails/photo-cafe-oz-denfert-fbd44ad294930c3129007aa4024bb1ec.jpg",
-					"subtitle": "3 place Denfert-Rochereau"
+					"title": "Le Losserand café",
+					"image_url": "http://www.allomatch.com/uploads/gallery/thumbnails/thumb_416_4641975bb9fdc.jpg",
+					"subtitle": "77, rue Raymond Losserand,"
 				}, {
-					"title": "Le grand cerf",
-					"image_url": "http://www.allomatch.com/uploads/gallery/thumbnails/photo-le-grand-cerf-1-fa14416ea0ffa64764f4eb5032081f65.jpg",
-					"subtitle": "79, boulevard de sébastopol"
+					"title": "Sports Bar à Disney Village",
+					"image_url": "http://www.allomatch.com/uploads/gallery/thumbnails/photo-sports-bar-a-disney-village-f0d95a74cc904904ddc95dacec041536.jpg",
+					"subtitle": "Disney Village - Disneyland Resort Paris,"
 				}, {
-					"title": "Le Camion qui fume",
-					"image_url": "http://www.allomatch.com/uploads/gallery/thumbnails/photo-le-camion-qui-fume-76cd5431ee91e792a9eb256dfc176f06.jpg",
-					"subtitle": "168 rue montmartre"
+					"title": "Café du Châtelet",
+					"image_url": "http://www.allomatch.com/uploads/gallery/thumbnails/photo-cafe-chatelet-279ed621da9c00c93f6e2d4a642b6295.jpg",
+					"subtitle": "8 RUE SAINT DENIS ,"
 				}, {
-					"title": "Thirsty Mad Cat",
-					"image_url": "http://www.allomatch.com/uploads/gallery/thumbnails/photo-thirsty-mad-cat-3f042a440af9d591bdeaec4d634383b6.jpg",
-					"subtitle": "120, rue Montmartre"
+					"title": "WOS Bar",
+					"image_url": "http://www.allomatch.com/uploads/gallery/thumbnails/photo-wos-bar-f6bb7be0dd633ec4b1a961d54b313664.jpg",
+					"subtitle": "184 rue Saint Jacques,"
+				}, {
+					"title": "Café Oz Rooftop",
+					"image_url": "http://www.allomatch.com/uploads/gallery/thumbnails/photo-cafe-oz-rooftop-d7961c0a26cf27d570a1fe959e6cdd51.jpg",
+					"subtitle": "34 Quai d’Austerlitz,"
 				}]
 			}
 		}
