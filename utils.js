@@ -1,11 +1,17 @@
-module.exports.denormalizeMoney = function(data) {
-    return (Math.round(data * 100) / 100).toFixed(2);
-};
+module.exports.normalizeBars = function(bars) {
+  var normalizedBars = [];
 
-module.exports.chatfuelSendMessages = function(res, text) {
-    res.send({
-        "messages": [
-            {"text": text}
-        ]
-    });
+  bars.forEach(function(object, index) {
+    var newObject = object;
+
+    newObject.buttons = [{
+      type:"web_url",
+      url:"https://rockets.chatfuel.com/store/shirt",
+      title:"Ignorer le bouton"
+    }];
+
+    normalizedBars.push(newObject);
+  });
+
+  return normalizedBars;
 };
