@@ -29,20 +29,20 @@ module.exports.getBars = function(res, match) {
 
           var str = '{"messages":[{"attachment":{"type":"template","payload":{"template_type":"list","top_element_style":"large","elements":['
 
-          bars.forEach(function(object, index) {
+          // bars.forEach(function(object, index) {
+          //
+          //   if (index == bars.length - 1) {
+          //     str += '{"title":"' + object.titleScraped + '", "image_url":"' + object.imageScraped + '", "subtitle":"' + object.subtitleScraped + '"}';
+          //   }
+          //   else {
+          //     str += '{"title":"' + object.titleScraped + '", "image_url":"' + object.imageScraped + '", "subtitle":"' + object.subtitleScraped + '"},';
+          //   }
+          //
+          // })
+          //
+          // str += ']}}}]}'
 
-            if (index == bars.length - 1) {
-              str += '{"title":"' + object.titleScraped + '", "image_url":"' + object.imageScraped + '", "subtitle":"' + object.subtitleScraped + '"}';
-            }
-            else {
-              str += '{"title":"' + object.titleScraped + '", "image_url":"' + object.imageScraped + '", "subtitle":"' + object.subtitleScraped + '"},';
-            }
-
-          })
-
-          str += ']}}}]}'
-
-          // var str = '{"messages":[{"attachment":{"type":"template","payload":{"template_type":"list","top_element_style":"large","elements":[{"title":"Ceci est un titre","image_url":"http://rockets.chatfuel.com/img/shirt.png","subtitle":"ceci est un subtitle"},{"title":"Ceci est un titre","image_url":"http://rockets.chatfuel.com/img/shirt.png","subtitle":"ceci est un subtitle"}]}}}]}'
+          var str = '{"messages":[{"attachment":{"type":"template","payload":{"template_type":"list","top_element_style":"large","elements":[{"title":"Ceci est un titre avec l'apostrophe","image_url":"http://rockets.chatfuel.com/img/shirt.png","subtitle":"ceci est un subtitle"},{"title":"Ceci est un titre","image_url":"http://rockets.chatfuel.com/img/shirt.png","subtitle":"ceci est un subtitle"}]}}}]}'
 
           // var str = '{"messages":[{"attachment":{"type":"template","payload":{"template_type":"list","top_element_style":"large","elements":[{"title":"Chatfuel Rockets T-Shirt","image_url":"http://rockets.chatfuel.com/img/shirt.png","subtitle":"Soft white cotton t-shirt with CF Rockets logo","buttons":[{"type":"web_url","url":"https://rockets.chatfuel.com/store/shirt","title":"View Item"}]},{"title":"Chatfuel Rockets Hoodie","image_url":"http://rockets.chatfuel.com/img/hoodie.png","subtitle":"Soft gray cotton t-shirt with CF Rockets logo","buttons":[{"type":"web_url","url":"https://rockets.chatfuel.com/store/hoodie","title":"View Item"}]}]}}}]}'
           // console.log(str);
