@@ -23,14 +23,14 @@ module.exports.getBars = function(res, match) {
       } else {
 
           res.send({
-            "messages": [
+            messages: [
                {
-                 "attachment":{
-                   "type":"template",
-                   "payload":{
-                     "template_type":"list",
-                     "top_element_style":"large",
-                     "elements": bars
+                 attachment:{
+                   type:"template",
+                   payload:{
+                     template_type:"list",
+                     top_element_style:"large",
+                     elements: bars
                    }
                  }
                }
