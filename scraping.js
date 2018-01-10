@@ -19,29 +19,36 @@ module.exports.getBars = function(res, match) {
       // phone: 'div > div.match_bar_info > div > .match-bar-info-phone > span',
       // picture: 'div > div.match_bar_detail > div.match_bar_picture > a > img@src'
 
-      title: 'div > .match_bar_top > div.match_bar_name > a@title',
-      image_url: 'div > div.match_bar_detail > div.match_bar_picture > a > img@src',
-      subtitle: 'div > div.match_bar_info > div > p > .street-address',
-      buttons: []
+      titleScraped: 'div > .match_bar_top > div.match_bar_name > a@title',
+      imageScraped: 'div > div.match_bar_detail > div.match_bar_picture > a > img@src',
+      subtitleScraped: 'div > div.match_bar_info > div > p > .street-address',
   }])(function(err, bars) {
       if (err) {
           defer.reject(err);
       } else {
 
-          res.send({
-            messages: [
-               {
-                 attachment:{
-                   type:"template",
-                   payload:{
-                     template_type:"list",
-                     top_element_style:"large",
-                     elements: utils.normalizeBars(bars)
-                   }
-                 }
-               }
-             ]
-           });
+          var str = '{"messages":[{"attachment":{"type":"template","payload":{"template_type":"list","top_element_style":"compact","elements":['
+
+          bars.forEach(function(object, index) {
+
+            if (index == bars.length - 1) {
+              str += '{"title":"' + object.titleScraped + '", "image_url":"' + object.imageScraped + '", "subtitle":"' + object.subtitleScraped + '"}';
+            }
+            else {
+              str += '{"title":"' + object.titleScraped + '", "image_url":"' + object.imageScraped + '", "subtitle":"' + object.subtitleScraped + '"},';
+            }
+
+          })
+
+          str += ']}}}]}'
+
+          // console.log(str);
+
+          // console.log("Obj to str : ");
+          var object = JSON.parse(str);
+          // console.log(object);
+
+          res.send(object);
         };
       });
 };
