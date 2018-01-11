@@ -41,22 +41,20 @@ module.exports.getBars = function(res, match) {
 
           // REAL DATA WITHTOUT TITLE
 
-          // var str = '{"messages":[{"attachment":{"type":"template","payload":{"template_type":"list","top_element_style":"large","elements":['
-          //
-          // var bars = bars.slice(0,4);
-          //
-          // bars.forEach(function(object, index) {
-          //
-          //   if (index == bars.length - 1) {
-          //     str += '{"title":"' + object.titleScraped + '", "image_url":"' + object.imageScraped + '", "subtitle":"' + object.subtitleScraped + '"}';
-          //   }
-          //   else {
-          //     str += '{"title":"' + object.titleScraped + '", "image_url":"' + object.imageScraped + '", "subtitle":"' + object.subtitleScraped + '"},';
-          //   }
-          //
-          // })
-          //
-          // str += ']}}}]}'
+          var str = '{"messages":[{"attachment":{"type":"template","payload":{"template_type":"generic","image_aspect_ratio":"square","elements":['
+
+          bars.forEach(function(object, index) {
+
+            if (index == bars.length - 1) {
+              str += '{"title":"' + object.titleScraped + '", "image_url":"' + object.imageScraped + '", "subtitle":"' + object.subtitleScraped + '", "buttons":[{"type":"web_url","url":"https://rockets.chatfuel.com/store/hoodie","title":"View Item"}]}';
+            }
+            else {
+              str += '{"title":"' + object.titleScraped + '", "image_url":"' + object.imageScraped + '", "subtitle":"' + object.subtitleScraped + '", "buttons":[{"type":"web_url","url":"https://rockets.chatfuel.com/store/hoodie","title":"View Item"}]},';
+            }
+
+          })
+
+          str += ']}}}]}'
 
           // console.log("Obj to str : ");
           var object = JSON.parse(str);
