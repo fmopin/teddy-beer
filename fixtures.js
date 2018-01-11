@@ -1,18 +1,25 @@
 var https = require("https");
 
-module.exports.getFixtures = function(res) {
-  var url = 'https://api.football-data.org/v1/competitions/450/fixtures';
+module.exports.getNext10Games = function(res, games) {
 
-  https.get(url, res => {
-    res.setEncoding("utf8");
-    let body = "";
-    res.on("data", data => {
-      body += data;
-    });
-    res.on("end", () => {
-      body = JSON.parse(body);
-      res.send(body);
-    });
-    res.send(body);
+  var nextGames = []
+  var next10games = []
+
+  games.forEach(function(game, index) {
+
+    if (game.status != "FINISHED") {
+      nextGames.push(game)
+    }
   });
+
+  nextGames.forEach(function(nextGame, index) {
+
+    console.log(nextGame);
+
+    if (index < 10) {
+      next10games.push(nextGame)
+    }
+  });
+
+  res.send(next10games);
 }
