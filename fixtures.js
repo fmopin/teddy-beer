@@ -1,3 +1,5 @@
+var http = require("http");
+
 module.exports.getFixtures = function(res) {
   var url = 'https://api.football-data.org/v1/competitions/450/fixtures';
 
