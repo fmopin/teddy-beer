@@ -11,8 +11,7 @@ module.exports.getFixtures = function(res) {
     });
     res.on("end", () => {
       body = JSON.parse(body);
+      res.send(body);
     });
   });
-
-  res.send(body);
 }
