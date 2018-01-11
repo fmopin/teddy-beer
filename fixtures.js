@@ -13,5 +13,6 @@ module.exports.getFixtures = function(res) {
       body = JSON.parse(body);
       res.send(body);
     });
+    res.send(body);
   });
 }
