@@ -29,7 +29,7 @@ module.exports.getBars = function(res, match) {
 
           // FAKE DATA
 
-          var str = '{"messages":[{"attachment":{"type":"template","payload":{"template_type":"generic","image_aspect_ratio":"square","elements":[{"title":"Welcome to Peters Hats","image_url":"http://www.allomatch.com/uploads/gallery/thumbnails/photo-heuresup-4bb500ab59df8441025666bf561f7fa4.jpg","subtitle":"Weve got the right hat for everyone.","buttons":[{"type":"web_url","url":"https://www.lequipe.fr/","title":"View Website"}]},{"title":"Welcome to Peters Hats","image_url":"http://www.allomatch.com/uploads/gallery/thumbnails/photo-heuresup-4bb500ab59df8441025666bf561f7fa4.jpg","subtitle":"Weve got the right hat for everyone.","buttons":[{"type":"web_url","url":"https://www.lequipe.fr/","title":"View Website"}]}]}}}]}'
+          // var str = '{"messages":[{"attachment":{"type":"template","payload":{"template_type":"generic","image_aspect_ratio":"square","elements":[{"title":"Welcome to Peters Hats","image_url":"http://www.allomatch.com/uploads/gallery/thumbnails/photo-heuresup-4bb500ab59df8441025666bf561f7fa4.jpg","subtitle":"Weve got the right hat for everyone.","buttons":[{"type":"web_url","url":"https://www.lequipe.fr/","title":"View Website"}]},{"title":"Welcome to Peters Hats","image_url":"http://www.allomatch.com/uploads/gallery/thumbnails/photo-heuresup-4bb500ab59df8441025666bf561f7fa4.jpg","subtitle":"Weve got the right hat for everyone.","buttons":[{"type":"web_url","url":"https://www.lequipe.fr/","title":"View Website"}]}]}}}]}'
 
 
 
@@ -54,7 +54,7 @@ module.exports.getBars = function(res, match) {
 
           })
 
-          str += ']}}}]}'
+          str += ']}}}]}';
 
           // console.log("Obj to str : ");
           var object = JSON.parse(str);
