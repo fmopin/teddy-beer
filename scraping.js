@@ -61,7 +61,7 @@ module.exports.getBars = function(res, match) {
 
           // REAL DATA WITHTOUT TITLE
 
-          var str = '{"messages":[{"attachment":{"type":"template","payload":{"template_type":"list","top_element_style":"large","elements":['
+          var str = '{"messages":[{"attachment":{"type":"template","payload":{"template_type":"generic","top_element_style":"large","elements":['
 
           var bars = bars.slice(0,4);
           bars.forEach(function(object, index) {
