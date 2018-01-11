@@ -49,7 +49,7 @@ module.exports.getBars = function(res, match) {
 
           // FAKE DATA
 
-          var str = '{"messages":[{"attachment":{"type":"template","payload":{"template_type":"generic","image_aspect_ratio":"square","elements":[{"title":"Chatfuel Rockets T-Shirt","image_url":"https://rockets.chatfuel.com/img/shirt.png","subtitle":"Soft white cotton t-shirt with CF Rockets logo","buttons":[{"type":"web_url","url":"https://rockets.chatfuel.com/store/shirt","title":"View Item"}]},{"title":"Chatfuel Rockets Hoodie","image_url":"https://rockets.chatfuel.com/img/hoodie.png","subtitle":"Soft grey cotton hoddie with CF Rockets logo","default_action":{"type":"web_url","url":"https://rockets.chatfuel.com/store","messenger_extensions":true},"buttons":[{"type":"web_url","url":"https://rockets.chatfuel.com/store/hoodie","title":"View Item"}]}]}}}]}'
+          var str = '{"message":{"attachment":{"type":"template","payload":{"template_type":"generic","elements":[{"title":"Welcome to Peter's Hats","image_url":"https://petersfancybrownhats.com/company_image.png","subtitle":"We've got the right hat for everyone.","default_action":{"type":"web_url","url":"https://peterssendreceiveapp.ngrok.io/view?item=103","messenger_extensions":true,"webview_height_ratio":"tall","fallback_url":"https://peterssendreceiveapp.ngrok.io/"},"buttons":[{"type":"web_url","url":"https://petersfancybrownhats.com","title":"View Website"},{"type":"postback","title":"Start Chatting","payload":"DEVELOPER_DEFINED_PAYLOAD"}]}]}}}}'
 
 
 
