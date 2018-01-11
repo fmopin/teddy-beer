@@ -9,7 +9,7 @@ router.get('/:match', function(req, res, next) {
 
     var match = req.params.match;
 
-    return getFixtures.getBars(res, match);
+    return scraping.getBars(res, match);
 
 });
 
