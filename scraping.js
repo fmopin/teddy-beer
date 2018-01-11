@@ -49,7 +49,7 @@ module.exports.getBars = function(res, match) {
 
           // FAKE DATA
 
-          var str = '{"message":[{"attachment":{"type":"template","payload":{"template_type":"generic","image_aspect_ratio":"square","elements":[{"title":"Welcome to Peters Hats","image_url":"https://i.pinimg.com/736x/33/b8/69/33b869f90619e81763dbf1fccc896d8d--lion-logo-modern-logo.jpg","subtitle":"Weve got the right hat for everyone.","buttons":[{"type":"web_url","url":"https://petersfancybrownhats.com","title":"View Website"},{"type":"postback","title":"Start Chatting","payload":"DEVELOPER_DEFINED_PAYLOAD"}]},{"title":"Welcome to Peters Hats","image_url":"https://i.pinimg.com/736x/33/b8/69/33b869f90619e81763dbf1fccc896d8d--lion-logo-modern-logo.jpg","subtitle":"Weve got the right hat for everyone.","buttons":[{"type":"web_url","url":"https://i.pinimg.com/736x/33/b8/69/33b869f90619e81763dbf1fccc896d8d--lion-logo-modern-logo.jpg","title":"View Website"},{"type":"postback","title":"Start Chatting","payload":"DEVELOPER_DEFINED_PAYLOAD"}]}]}}}]}'
+          var str = '{"messages":[{"attachment":{"type":"template","payload":{"template_type":"generic","image_aspect_ratio":"square","elements":[{"title":"Welcome to Peters Hats","image_url":"http://www.allomatch.com/uploads/gallery/thumbnails/photo-heuresup-4bb500ab59df8441025666bf561f7fa4.jpg","subtitle":"Weve got the right hat for everyone.","buttons":[{"type":"web_url","url":"https://www.lequipe.fr/","title":"View Website"}]},{"title":"Welcome to Peters Hats","image_url":"http://www.allomatch.com/uploads/gallery/thumbnails/photo-heuresup-4bb500ab59df8441025666bf561f7fa4.jpg","subtitle":"Weve got the right hat for everyone.","buttons":[{"type":"web_url","url":"https://www.lequipe.fr/","title":"View Website"}]}]}}}]}'
 
 
 

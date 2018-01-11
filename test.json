@@ -9,33 +9,25 @@
           "elements":[
              {
               "title":"Welcome to Peters Hats",
-              "image_url":"https://petersfancybrownhats.com/company_image.png",
+              "image_url":"http://www.allomatch.com/uploads/gallery/thumbnails/photo-heuresup-4bb500ab59df8441025666bf561f7fa4.jpg",
               "subtitle":"Weve got the right hat for everyone.",
               "buttons":[
                 {
                   "type":"web_url",
-                  "url":"https://petersfancybrownhats.com",
+                  "url":"https://www.lequipe.fr/",
                   "title":"View Website"
-                },{
-                  "type":"postback",
-                  "title":"Start Chatting",
-                  "payload":"DEVELOPER_DEFINED_PAYLOAD"
                 }
               ]
             },
             {
              "title":"Welcome to Peters Hats",
-             "image_url":"https://petersfancybrownhats.com/company_image.png",
+             "image_url":"http://www.allomatch.com/uploads/gallery/thumbnails/photo-heuresup-4bb500ab59df8441025666bf561f7fa4.jpg",
              "subtitle":"Weve got the right hat for everyone.",
              "buttons":[
                {
                  "type":"web_url",
-                 "url":"https://petersfancybrownhats.com",
+                 "url":"https://www.lequipe.fr/",
                  "title":"View Website"
-               },{
-                 "type":"postback",
-                 "title":"Start Chatting",
-                 "payload":"DEVELOPER_DEFINED_PAYLOAD"
                }
              ]
            }
